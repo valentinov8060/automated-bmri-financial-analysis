@@ -5,6 +5,7 @@ Automated financial analysis service for Bank Mandiri (BMRI) built with FastAPI.
 ---
 
 ## Features
+
 - **FastAPI** web framework with asynchronous support.
 - Configurable settings via `pydantic-settings` and `.env`.
 - Modular structure with versioned routing (`/api/v1`).
@@ -41,6 +42,7 @@ automated-bmri-financial-analysis/
 ## Getting Started
 
 ### 1. Prerequisites
+
 - Python 3.10+ (tested on Python 3.12)
 
 ### 2. Environment Setup
@@ -48,12 +50,14 @@ automated-bmri-financial-analysis/
 Create and activate a virtual environment:
 
 **On Linux/macOS:**
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 ```
 
 **On Windows (PowerShell):**
+
 ```powershell
 python -m venv .venv
 .venv\Scripts\Activate.ps1
@@ -78,7 +82,9 @@ cp .env.example .env
 ```bash
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
+
 Or run directly:
+
 ```bash
 python -m app.main
 ```
@@ -103,4 +109,3 @@ Execute unit tests with `pytest`:
 ```bash
 pytest
 ```
-
